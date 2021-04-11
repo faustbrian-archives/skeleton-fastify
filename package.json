@@ -2,13 +2,9 @@
 	"name": "@konceiver/:package_name",
 	"version": "1.0.0",
 	"description": ":package_description",
-	"repository": "https://github.com/konceiver/:package_name",
 	"license": "MIT",
+	"repository": "https://github.com/konceiver/:package_name",
 	"main": "dist/index",
-	"types": "dist/index",
-	"files": [
-		"dist"
-	],
 	"scripts": {
 		"build": "tease build",
 		"format": "tease format",
@@ -18,12 +14,16 @@
 		"specs": "tease specs",
 		"test": "tease test"
 	},
+	"files": [
+		"dist"
+	],
 	"dependencies": {
 		"fastify-plugin": "^3.0.0"
 	},
 	"devDependencies": {
 		"@konceiver/tease": "^1.6.1"
 	},
+	"types": "dist/index",
 	"authors": [
 		{
 			"name": "Brian Faust",
