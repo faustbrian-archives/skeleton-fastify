@@ -10,7 +10,7 @@
 		"format": "tease format",
 		"lint": "tease lint",
 		"prepare": "tease install && tease build",
-		"publish": "tease publish",
+		"publish": "npm run prepare && npm publish --access=public",
 		"specs": "tease specs",
 		"test": "tease test"
 	},
@@ -21,7 +21,7 @@
 		"fastify-plugin": "^3.0.0"
 	},
 	"devDependencies": {
-		"@konceiver/tease": "^1.6.1"
+		"@konceiver/tease": "^2.0.0"
 	},
 	"types": "dist/index",
 	"authors": [
